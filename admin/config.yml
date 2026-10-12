@@ -7,7 +7,7 @@ backend:
   squash_merges: true
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+public_folder: "assets/uploads"
 site_url: "https://www.tpcroelandsveld.be"
 display_url: "https://www.tpcroelandsveld.be"
 locale: "nl"

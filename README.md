@@ -26,7 +26,7 @@ Open `index.html` in een browser. Voor nieuwsfetches en CMS is een lokale webser
 2. Richt een veilige OAuth-authenticatieservice/proxy in en vervang `base_url` door het echte endpoint. Gebruik geen wachtwoorden of client secrets in deze repository.
 3. Controleer de branchnaam (`main`) en CMS-rechten voor alleen de medewerkers die nieuws moeten publiceren.
 4. Publiceer `/admin/` en test inloggen, concept opslaan, preview, publiceren en wijzigen.
-5. Nieuwsberichten worden als JSON opgeslagen in `content/news-posts/`. De gegenereerde index staat in `content/news/index.json` en is voorlopig leeg. De CMS-setup moet ook een gecontroleerde build/actie hebben die de nieuwsindex genereert uit de nieuwsbestanden; zie `scripts/build-news-index.py`.
+5. Nieuws wordt als JSON opgeslagen in `content/news/`. De indexpagina `content/news/index.json` is voorlopig leeg. De CMS-setup moet ook een gecontroleerde build/actie hebben die de nieuwsindex genereert uit de nieuwsbestanden; zie `scripts/build-news-index.py`.
 
 ## Bestaande diensten behouden
 - Lespagina's blijven voorlopig gelinkt aan de huidige website: `/padelles`, `/tennislessen`, `/lessen`.
@@ -42,3 +42,11 @@ Open `index.html` in een browser. Voor nieuwsfetches en CMS is een lokale webser
 - [ ] Decap-authenticatie getest met echte clubmedewerker.
 - [ ] Alle redirects, mobiele weergave, toegankelijkheid en gebroken links gecontroleerd.
 - [ ] Domein en DNS gewijzigd met e-mailrecords intact.
+
+
+## GitHub Pages project URL compatibility
+HTML pages now set a base URL automatically:
+- GitHub Pages host (`*.github.io`): `/roelandsveld-new/`
+- Custom domain: `/`
+
+This makes local page links, CSS, JavaScript, and image assets resolve under the repository path during the free GitHub Pages test. If the repository is renamed, update `/roelandsveld-new/` in the inline base script across HTML files.
