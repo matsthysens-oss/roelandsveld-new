@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: VERVANG-DIT/TPCR-website
+  branch: main
+  base_url: https://VERVANG-DIT-OAUTH-PROXY.example.com
+  auth_endpoint: auth
+  squash_merges: true
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+site_url: "https://www.tpcroelandsveld.be"
+display_url: "https://www.tpcroelandsveld.be"
+locale: "nl"
+collections:
+  - name: "news"
+    label: "Nieuwsberichten"
+    label_singular: "Nieuwsbericht"
+    folder: "content/news-posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "URL-slug", name: "slug", widget: "string", hint: "Korte URL zonder spaties, bijvoorbeeld clubfeest-2027" }
+      - { label: "Publicatiedatum", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD-MM-YYYY", time_format: false }
+      - { label: "Categorie", name: "category", widget: "select", options: ["Clubnieuws", "Interclub", "Tornooi", "Lessen", "Evenementen"] }
+      - { label: "Samenvatting", name: "summary", widget: "text" }
+      - { label: "Hoofdfoto", name: "image", widget: "image", required: false }
+      - { label: "Alt-tekst foto", name: "image_alt", widget: "string", required: false }
+      - { label: "Bericht", name: "body", widget: "markdown" }
+      - { label: "Knoptekst", name: "button_text", widget: "string", required: false }
+      - { label: "Knoplink", name: "button_url", widget: "string", required: false }

@@ -1,0 +1,32 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/lid-worden"
+  to = "/lidmaatschap.html"
+  status = 301
+
+[[redirects]]
+  from = "/lessen"
+  to = "/lessen.html"
+  status = 301
+
+[[redirects]]
+  from = "/reservatieregelement"
+  to = "/reservatiereglement.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/praktisch.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/praktisch.html#faq"
+  status = 301
+
+[[redirects]]
+  from = "/matchplanner"
+  to = "https://www.tpcroelandsveld.be/matchplanner"
+  status = 302
