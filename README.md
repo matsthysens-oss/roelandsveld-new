@@ -1,52 +1,31 @@
-# TPC Roelandsveld — volledige HTML-website (eerste implementatiestap)
+# TPC Roelandsveld — volledige HTML-website v2
 
-Dit project zet het homepageconcept om naar een statische multi-page website met:
-- donkerblauw `#19354D`, zachtgroen `#B9D8B4`, wit en lichtgroen `#F4F7F3`;
-- authentieke, ongewijzigde clubfoto's en logo's uit het aangeleverde prototype;
-- aparte pagina's voor home, club, tennis & padel, lessen, lidmaatschap, praktische info, reservatiereglement, winteruren, privacy, clubvoorwaarden en grensoverschrijdend gedrag;
-- nieuws-overzicht en nieuwsdetailweergave;
-- Decap CMS configuratie voor nieuwsbeheer;
-- Netlify publicatieconfiguratie en eerste redirects.
+Deze versie is bedoeld als zelfstandige website voor GitHub Pages. De navigatie en de clubpagina's verwijzen naar lokale HTML-pagina's; de oude Wix-site wordt niet meer gebruikt als bestemming voor interne pagina's.
 
-## Belangrijk: dit is een deploybare basis, nog niet de definitieve live migratie
-De huidige officiële inhoud is niet volledig automatisch uit Wix geëxporteerd. Sommige juridische teksten, exacte tarieven, openingstijden, externe reserveringslink en bestaande formulierintegraties moeten eerst integraal gecontroleerd en overgezet worden. Tijdelijke verwijzingen zijn expliciet vermeld in de pagina's. Verwijder die meldingen pas na controle.
+## Publicatie op GitHub Pages
+1. Download en pak deze ZIP uit.
+2. Upload de INHOUD van de map `TPCR-volledige-site-v2` naar de hoofdmap van je repository `roelandsveld-new` en vervang bestaande bestanden.
+3. Commit de wijzigingen.
+4. Wacht op GitHub Pages en controleer `https://matsthy-sens-oss.github.io/roelandsveld-new/` (gebruik de exacte accountnaam in de browser).
 
-## Lokaal bekijken
-Open `index.html` in een browser. Voor nieuwsfetches en CMS is een lokale webserver nodig; je kunt het project ook eerst als Netlify Draft Deploy publiceren.
+De HTML bevat een dynamische base-path: op GitHub Pages gebruikt ze `/roelandsveld-new/`; op een eigen domein gebruikt ze `/`.
 
-## Netlify-publicatie
-1. Maak een privé GitHub-repository voor dit project en upload alle bestanden.
-2. Maak in Netlify een nieuwe site aan en koppel de repository.
-3. Build command leeg laten; publish directory is `.`.
-4. Test de Netlify Preview URL voordat je het clubdomein wijzigt.
-5. Stel HTTPS in en test alle interne/externe links.
+## Wat is lokaal gebouwd?
+Home, De club, Tennis & padel, Lessen & jeugd, Padelschool, Tennisschool, Lidmaatschap, Praktische info & contact, Reservatiereglement, Winteruren, FAQ, Matchplanner, Privacy, Clubvoorwaarden, Veilig sporten, Sponsors, Nieuws-overzicht en nieuwsdetail.
 
-## Decap CMS instellen
-1. Decap is geconfigureerd met GitHub backend. Vervang in `admin/config.yml` `VERVANG-DIT/TPCR-website` door de echte GitHub `eigenaar/repository`.
-2. Richt een veilige OAuth-authenticatieservice/proxy in en vervang `base_url` door het echte endpoint. Gebruik geen wachtwoorden of client secrets in deze repository.
-3. Controleer de branchnaam (`main`) en CMS-rechten voor alleen de medewerkers die nieuws moeten publiceren.
-4. Publiceer `/admin/` en test inloggen, concept opslaan, preview, publiceren en wijzigen.
-5. Nieuws wordt als JSON opgeslagen in `content/news/`. De indexpagina `content/news/index.json` is voorlopig leeg. De CMS-setup moet ook een gecontroleerde build/actie hebben die de nieuwsindex genereert uit de nieuwsbestanden; zie `scripts/build-news-index.py`.
+## Externe diensten
+Enkel diensten die niet lokaal door een statische HTML-site uitgevoerd kunnen worden, blijven extern:
+- Tennis en Padel Vlaanderen voor reserveringen en formele lidmaatschapsacties.
+- Google Maps voor routebeschrijving.
+- mailto-/tel-links voor contact.
 
-## Bestaande diensten behouden
-- Lespagina's blijven voorlopig gelinkt aan de huidige website: `/padelles`, `/tennislessen`, `/lessen`.
-- Lidmaatschap blijft voorlopig gelinkt aan de huidige officiële pagina.
-- De algemene Tennis en Padel Vlaanderen-link is een tijdelijke reserveringsbestemming: vervang deze door de exacte TPCR-reserveringslink vóór publicatie.
-- Er is nog geen nieuw contactformulier of nieuwsbriefbackend aangesloten. Behoud de huidige Wix/formulierdiensten tot de vervanging getest is.
+Er staan geen interne links meer naar `tpcroelandsveld.be` in de HTML-pagina's. Sommige officiële teksten (reservatiereglement, privacy, clubvoorwaarden, veilig sporten), actuele tarieven, lesdata en sponsorlogo's moeten nog integraal worden gecontroleerd en ingevuld. De placeholders vermelden dit duidelijk; ze zijn geen vervanging van de officiële juridische teksten.
 
-## Voor livegang afvinken
-- [ ] Alle actuele tarieven en seizoensdata gecontroleerd.
-- [ ] Officiële reservatielink en lesinschrijflinks getest.
-- [ ] Volledige FAQ, privacyverklaring, clubvoorwaarden en reservatiereglement overgezet.
-- [ ] Contactformulier en nieuwsbrief getest en bezorging bevestigd.
-- [ ] Decap-authenticatie getest met echte clubmedewerker.
-- [ ] Alle redirects, mobiele weergave, toegankelijkheid en gebroken links gecontroleerd.
-- [ ] Domein en DNS gewijzigd met e-mailrecords intact.
+## Nieuwsbeheer
+De pagina's en Decap CMS-configuratie zijn voorbereid, maar de beveiligde GitHub OAuth-authenticatie is nog niet ingesteld. Zonder een auth endpoint werkt inloggen via `/admin/` nog niet. Ook moet de echte GitHub-repository worden ingevuld in `admin/config.yml`.
 
+## Contact en nieuwsbrief
+Contact werkt via e-mail en telefoon. Er is nog geen nieuw online contactformulier of nieuwsbriefverwerking geactiveerd; koppel daarvoor een dienst en test bezorging vóór publicatie.
 
-## GitHub Pages project URL compatibility
-HTML pages now set a base URL automatically:
-- GitHub Pages host (`*.github.io`): `/roelandsveld-new/`
-- Custom domain: `/`
-
-This makes local page links, CSS, JavaScript, and image assets resolve under the repository path during the free GitHub Pages test. If the repository is renamed, update `/roelandsveld-new/` in the inline base script across HTML files.
+## Eigen domein
+Koppel `tpcroelandsveld.be` pas wanneer de volledige inhoud, links en functies zijn gecontroleerd. Volg daarna GitHub's officiële custom-domain stappen en wijzig DNS-records zorgvuldig.

@@ -1,0 +1,4 @@
+Controle van interne links in HTML-bestanden.
+Geen href/src-links naar de oude Wix-website gevonden.
+
+Bewust behouden externe bestemmingen: Tennis en Padel Vlaanderen, Google Maps en mailto/tel.
