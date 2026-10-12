@@ -8,8 +8,8 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 public_folder: "assets/uploads"
-site_url: "https://www.tpcroelandsveld.be"
-display_url: "https://www.tpcroelandsveld.be"
+site_url: "https://matsthy-sens-oss.github.io/roelandsveld-new/"
+display_url: "https://matsthy-sens-oss.github.io/roelandsveld-new/"
 locale: "nl"
 collections:
   - name: "news"

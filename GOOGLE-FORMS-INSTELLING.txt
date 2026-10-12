@@ -1,0 +1,16 @@
+TPC ROELANDSVELD — GOOGLE FORMS-KOPPELINGEN
+
+Belangrijk: de bestaande clubwebsite toont drie toekomstige gepubliceerde items (Meli Melo, Voorjaarsinterclub 2027 en Lid worden 2027). Google Forms-links kunnen niet veilig worden aangemaakt vanuit de statische websitebestanden zonder toegang tot het Google-account van de club. Er zijn daarom geen nep- of niet-werkende Google Forms-URL's geplaatst.
+
+1) MELI MELO — vrijdag 23 oktober 2026
+Aanbevolen velden: naam, e-mailadres, telefoon (optioneel), aantal deelnemers, eventuele opmerking, akkoord privacyverklaring.
+Formuliertitel: Inschrijving Meli Melo — 23 oktober 2026.
+
+2) VOORJAARSINTERCLUB 2027 — ploegvorming
+Aanbevolen velden: naam, e-mailadres, telefoon, tennis/padel/beide, team/ploegnaam (optioneel), niveau/reeks (optioneel), zoekt nog teamgenoten? (ja/nee), opmerkingen, akkoord privacyverklaring.
+Formuliertitel: Interesse Voorjaarsinterclub 2027 — TPC Roelandsveld.
+
+3) LID WORDEN 2027
+Gebruik hiervoor geen los Google Form als vervanging van het officiële lidmaatschap. De bestaande officiële inschrijving via Tennis en Padel Vlaanderen blijft leidend.
+
+Zodra de formulieren 1 en 2 zijn aangemaakt, voeg de gepubliceerde URL's toe aan nieuws/index.html op de twee knoppen die nu een e-mailverzoek openen. Geef de URL's door om dit bestand definitief te koppelen.

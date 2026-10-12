@@ -1,0 +1,32 @@
+[
+  {
+    "id": "meli-melo-2026-10-23",
+    "title": "Meli Melo",
+    "date": "2026-10-23",
+    "dateLabel": "Vrijdag 23 oktober 2026",
+    "category": "Clubevenement",
+    "description": "Een gezellige avond met vriendschappelijke wedstrijdjes, andere clubleden ontmoeten en een kommetje pompoensoep.",
+    "registration": "google_form_url_needed",
+    "registrationNote": "Google Forms-link nog aan te maken/koppelen."
+  },
+  {
+    "id": "voorjaarsinterclub-2027",
+    "title": "Voorjaarsinterclub 2027",
+    "date": null,
+    "dateLabel": "Voorjaar 2027 · ploegvorming nu",
+    "category": "Tennis & padel",
+    "description": "Stel een team samen voor het nieuwe interclubseizoen. De oproep geldt voor zowel tennis als padel. De club vermeldt dat spelers die willen deelnemen zich tijdig lid moeten maken; controleer de actuele deadline bij de club.",
+    "registration": "google_form_url_needed",
+    "registrationNote": "Google Forms-link voor teaminteresse nog aan te maken/koppelen."
+  },
+  {
+    "id": "lid-worden-2027",
+    "title": "Lid worden — seizoen 2027",
+    "date": null,
+    "dateLabel": "Seizoen 2027",
+    "category": "Lidmaatschap",
+    "description": "De club heeft de ledenoproep voor seizoen 2027 gepubliceerd. Ontdek de voordelen en meld je interesse aan via het inschrijvingsformulier zodra dat gekoppeld is.",
+    "registration": "google_form_url_needed",
+    "registrationNote": "Voor lidmaatschap is de officiële Tennis en Padel Vlaanderen-inschrijving van toepassing; er wordt geen vervangend Google Form verzonnen."
+  }
+]

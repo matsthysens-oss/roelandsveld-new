@@ -29,3 +29,10 @@ Contact werkt via e-mail en telefoon. Er is nog geen nieuw online contactformuli
 
 ## Eigen domein
 Koppel `tpcroelandsveld.be` pas wanneer de volledige inhoud, links en functies zijn gecontroleerd. Volg daarna GitHub's officiële custom-domain stappen en wijzig DNS-records zorgvuldig.
+
+
+## Evenementen en inschrijvingen
+De pagina Nieuws & events bevat de toekomstige gepubliceerde clubitems die op de huidige homepage zichtbaar zijn: Meli Melo (23 oktober 2026), Voorjaarsinterclub 2027 en Lid worden 2027. De eerste twee hebben een e-mailfallback zolang de echte Google Forms-links nog niet zijn aangemaakt. Lidmaatschap blijft via de officiële Tennis en Padel Vlaanderen-procedure lopen. Zie `GOOGLE-FORMS-INSTELLING.txt` voor de concrete formulieropzet.
+
+## Tennis- en padellessen
+De pagina's `padelschool.html` en `tennisschool.html` bevatten geen links naar oude lespagina's of aanbieders. Zodra actuele inschrijvingslinks beschikbaar zijn, kunnen die lokaal worden toegevoegd.
